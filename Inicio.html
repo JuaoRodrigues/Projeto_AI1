@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Zoológico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav id="menu-navegacao">
+            <img class="logo-canto" src="Logos/logo_urso.png" alt="Logo">
+            <div class="links-menu">
+                <a href="#">Início</a>
+                <a href="#seccao-mapa-zoo">Mapa</a>
+                <a href="#">Bilhetes</a>
+                <a href="#seccao-quiz">Quiz</a>
+                
+                <div class="relogio">
+                    <p id="DataHora"></p> <!-- Mostra a data e hora do pc (código em script.js) -->
+                </div>
+            </div>
+        </nav>   
+    </header>
+
+    <main>
+        <div class="carrossel">
+            <img class="slide ativo" src="ImagensHome/ursos.webp" alt="Urso">
+            <img class="slide" src="ImagensHome/PanteraNegra.jpeg" alt="Tartaruga">
+            <img class="slide" src="ImagensHome/linceiberico.webp" alt="Lince Ibérico">
+            
+            <!-- Setas (mudam de pag manualmente) -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+    
+<!-- SECÇÃO DO MAPA  -->
+<section id="seccao-mapa-zoo">
+    
+    <!-- Título -->
+    <h1 class="titulo-mapa">Mapa do nosso Zoo</h1>
+    
+    <div class="seccao-mapa-legenda">
+        <!-- Mapa -->
+        <div class="mapa-container">
+            <img src="MapaPrincipal.jpeg" alt="Mapa do Zoo">
+            
+            <svg viewBox="0 0 2144 1984" preserveAspectRatio="none">
+                <!-- ZONA 1 (Amarela) -->
+                <a href="zona1.html">
+                    <path class="zona-amarela" d="M1218.5 1322C1218.9 1323.6 1348 1221 1412.5 1169.5L1499 1265H1727.5L1760 1227.5L1808.5 1208H1861L1907.5 1227.5L1945.5 1265L1977.5 1307L2052.5 1399L2063.5 1422V1604.5L2052.5 1638L2018.5 1662L1964 1683.5L1957.5 1696L1946.5 1705V1724L1925.5 1733.5H1882.5H1867H1817.5L1798.5 1751.5V1771L1772 1782.5H1727.5L1711 1775.5L1381 1893H1341.5L1320.5 1879V1672H1196.5L1201 1634.5L1187.5 1604.5L1181 1585.5L1187.5 1451.5L1218.5 1322Z" />
+                </a>
+
+                <!-- ZONA 2 (Laranja) -->
+                <a href="zona2.html">
+                    <path class="zona-laranja" d="M623.5 1611.5L606 1604.18L590 1596L563.5 1588.5L550 1574V1560V1546.5L461.5 1518L369.5 1490.5L191.5 1509.5V1534.5L201 1560L208.5 1588.5L219 1621L237 1666.5L249.5 1701.5L263.5 1752L287.5 1804.5L317 1841.5L350.5 1865.5L385.5 1879.5L431 1885.5H475H536H590H596.5H629V1804.5V1797V1734V1714C627.167 1691.83 623.5 1640.3 623.5 1611.5Z" />
+                </a>
+                
+                <!-- ZONA 3 (Roxa) -->
+                <a href="zona3.html">
+                    <path class="zona-roxa" d="M65 819.5L364.5 780.5L399 800.5H426.5L462.5 780.5H667L677 708.5L629.5 612L677 576L687 548.5L677 531.5L606.5 331H260.5L183 357L119.5 406L57.5 492.5L36 594.5V708.5L44.5 770.5L65 819.5Z" />
+                </a>
+
+                <!-- ZONA 4 (Verde) -->
+                <a href="zona4.html">
+                    <path class="zona-verde" d="M606.5 330.5L676 525L688 545L853 590.5L876 627.5L887.5 660L912.5 697L945.5 727L970.5 755L984.5 761L994.051 770.065L1018.02 795.364L1048.64 811.342L1081.93 812.674L1064 888.571L1071.14 919.924L1082.36 952.652L1128.18 1007.82L1093.58 1091.98L1175.86 1198.58L1178.67 1209.8L1139.4 1241.59L1136.59 1251.88L1201.11 1337.91L1413.5 1169.5L1498.5 1265.5L1709 1096.5L1378.5 705H1400L1427.5 681L1461.5 650L1489 626.5L1505.5 590.5L1517 540.5L1510.5 496L1505.5 452L1479.5 421L1444 383.5L1400 366.5L1335.5 357L1284 361.5H1277L1279.19 207.832L1270.54 186.221L1255.41 161.007L1232.36 142.277L1203.54 125.708L1161.04 112.021L1122.86 100.495L1068.11 94.0114L1013.36 95.4521L949.969 105.538L894.499 126.429L839.029 161.007L810.214 186.941L776.355 222.961L743.218 271.947L716.563 315.89L698.554 328.857L648.127 331.019L606.5 330.5Z" />
+                </a>
+
+                <!-- ZONA 5 (Azul)-->
+                <a href="zona5.html">
+                    <path class="zona-azul" d="M63 821.5L81.8747 855.282L110.419 891.4L143.624 924.605L188.479 963.052L231.005 989.267L258.384 1003.25L279.938 1017.81L298.579 1045.77L304.405 1073.73L296.249 1114.51L277.025 1168.69L256.657 1232.48L227.988 1324.23L204.233 1388.94L191.946 1438.09L189.488 1467.57L190.307 1510.99L367.241 1489.69L549.908 1547.03V1571L562.387 1585.74L623.743 1611.7L662.287 1613.27L663.861 1425.27L663.074 1368.63L582.052 1203.44L564.638 1143.01L539.581 1039.1L560.27 1029.6L578.511 1013.54L583.618 997.492H659.501L678.472 960.28L680.661 809.244L679.202 785.166L671.176 781.518H463.957L429.664 801.948L398.289 804.137L363.266 781.518L64.1122 821.648" />
+                </a>
+
+                <!-- ZONA 6 (Vermelha)-->
+                <a href="zona6.html">
+                    <path class="zona-vermelha" d="M662.5 1423H803L809.5 1413.5L847.5 1384L904.5 1339.5H1082L1201 1336.5L1137 1254L1140 1242L1177.5 1211.5V1199L1092.5 1093.5L1129 1008.5L1081.5 954L1062.67 889.906L1080.92 813.022L1048.29 812.469L1015.1 795.875L985.232 761.581L969.745 756.05L913.326 697.971L885.669 660.359L875.16 628.83L852.482 592.324L688.203 546.968L679.353 575.73L633.996 612.79L677.693 708.481L669.396 778.728L681.012 785.919L680.459 960.154L660.546 996.66L585.321 999.979L579.237 1017.68L560.43 1034.83L541.624 1041.46L582.555 1202.98L664.971 1369.47L662.5 1423Z" />
+                </a>
+
+                <!-- ZONA 7 (Rosa)-->
+                <a href="zona7.html">
+                    <path class="zona-rosa" d="M629 1887L624 1613H661.5V1424H801.5L810.487 1416.09L841.375 1391.9L902.5 1343L1200.5 1337L1215.5 1329L1186.5 1448.5L1179 1585.5L1200.5 1638L1194.5 1674.5L1184 1782.71L1172.45 1806.98L1158 1830.96L1140.95 1849.16L1120.73 1862.17L1085.48 1882.97L1032.03 1898.28L978.867 1899.73L939.574 1890.19L916.171 1871.12L878.611 1826.63L839.317 1799.76L808.114 1795.71L788.467 1800.91L766.798 1814.2L747.44 1831.83L733.283 1851.76L714.792 1887.59L663.075 1890.48L629 1887Z" />
+                </a>
+            </svg>
+        </div>
+
+        <!-- Legenda -->
+        <div class="legenda-container">
+            <h2>Zonas do Zoo</h2>
+            <p>Clica numa área do mapa para saberes mais.</p>
+            
+            <ul class="lista-legenda">
+                <li><span class="ponto-amarelo"></span> Zona 1: Entrada e Serviços</li>
+                <li><span class="ponto-laranja"></span> Zona 2: Quintinha</li>
+                <li><span class="ponto-roxo"></span> Zona 3: Felinos e Carnívoros</li>
+                <li><span class="ponto-verde"></span> Zona 4: Floresta</li>
+                <li><span class="ponto-azul"></span> Zona 5: Savana e Repteis</li>
+                <li><span class="ponto-vermelho"></span>Zona 6: Templo dos primatas e aves</li>
+                <li><span class="ponto-rosa"></span>Zona 7: Vale dos Tigres e Aquário</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Secção do Quiz -->
+<section id="seccao-quiz">
+    <div class="quiz-container">
+        <!-- Cabeçalho -->
+        <div class="quiz-cabecalho">
+            <h2>Quiz do Zoo</h2>
+            <span id="contador-perguntas">Pergunta 1 de 5</span>
+        </div>
+
+        <!-- O script.js vai mudar a pergunta aqui -->
+        <h3 id="texto-pergunta">Aqui vai aparecer a pergunta</h3>
+        
+        <div id="opcoes-container" class="grelha-opcoes">
+            <!-- As opções sao criadas no script.js -->
+        </div>
+
+        <!-- Os botões -->
+        <div class="quiz-controlos">
+            <button id="btn-anterior" class="botao-quiz voltar-quiz" style="display:none;" onclick="avancarPergunta(-1)">❮ Anterior</button>
+            <div style="margin-left:auto">
+                <button id="btn-proximo" class="botao-quiz" style="display: none;" onclick="avancarPergunta(1)">Próximo ❯</button>
+                <button id="btn-submeter" class="botao-quiz" style="display: none;" onclick="mostrarResultados()">Submeter</button>
+            </div>
+        </div>
+    </div>
+</section>
+        <script src="script.js"></script>
+    </main>
+</body>

@@ -1,0 +1,417 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.carrossel {
+    position: relative;
+    /* O width e o height a 100 garantei que as imagens do slider estão a preencher a tela de qualquer utilizador */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Garante que nada sai fora das margens */
+}
+
+/* O estilo definido para todos os slides, com a opacidade a 0 para ficarem todas invisiveis */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; 
+    transition: opacity 0.5s ease; /* Cria um efeito de transição */
+    z-index: 1;
+}
+
+/* Muda a opacidade, que estava a 0 no .slide para 1, para só se ver a atual */
+.slide.ativo {
+    opacity: 1; 
+}
+
+/* Estilo das setas */
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Torna o fundo invisível */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 20;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* A seta fica com uma sombra preta, com 80% de opacidade */
+}
+
+.seta:hover {
+    background-color: transparent; 
+    color: #b75353; 
+    transform: translateY(-50%) scale(1.2); /* Aumenta a seta um bocadinho */
+    transition: all 0.2s ease; /* Dá uma animação */
+}
+
+.seta-esq {
+    left: 20px;
+}
+
+.seta-dir {
+    right: 20px;
+}
+
+
+.bolinhas-container {
+    position: absolute;
+    bottom: 20px; /* Distância do fim da imagem */
+    width: 100%;
+    text-align: center;
+    z-index: 20; /* Para ficarem por cima da imagem */
+}
+
+.bolinha {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fica branco, com 50% de opacidade */
+    border-radius: 50%; /* Transforma o quadrado num círculo */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease;
+}
+
+.bolinha.ativo, .bolinha:hover {
+    background-color: #b75353; /* Usa o vermelho do seu cabeçalho */
+}
+
+/* Estrutura principal do menu de navegação */
+#menu-navegacao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px; /* Separa tudo e deixa o menu maior */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Centraliza o logo e o texto */
+    justify-content: space-between; /* Empurra o logo para a esquerda e links para a direita */
+    background-color: transparent;
+    transition: background-color 0.4s ease;
+    z-index: 100;
+}
+
+/* Cor no hover */
+#menu-navegacao:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+/* O que acontece ao menu ao fazer scroll (script.js */
+#menu-navegacao.fixo {
+    position: fixed; /* Prende o menu no topo do ecrã */
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* O logótipo perde a posição absoluta e adapta-se ao menu */
+.logo-canto {
+    width: 130px; /* Pode ajustar este tamanho */
+}
+
+.links-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo das hiperligações */
+.links-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Letras maiúsculas */
+    transition: color 0.3s ease;
+}
+
+.links-menu a:hover {
+    color: #b75353; /* Ficam vermelhas como o cabeçalho ao passar o rato */
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    padding-left: 2%;
+    border-left: 0.15em solid white;
+}
+
+#DataHora {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 85%;
+    color: white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* =========================================
+   SECÇÃO DO MAPA (100vh com Layout Equilibrado)
+   ========================================= */
+
+#seccao-mapa-zoo {
+    background-color: whitesmoke; /* Fundo limpo de volta */
+    height: 100vh;             
+    width: 100%;
+    box-sizing: border-box;    
+    padding: 2% 5%;            
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;   
+    align-items: center;       /* Centra tudo horizontalmente para eliminar o vazio desequilibrado */
+    overflow: hidden;          
+}
+
+.titulo-mapa {
+    font-family: Georgia, serif;
+    font-size: 300%; 
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3E2C23; 
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    margin: 0 0 2% 0;
+    text-align: center; /* Centrar o título ajuda imenso a equilibrar o espaço branco */
+    width: 100%;
+}
+
+.seccao-mapa-legenda {
+    display: flex;
+    align-items: center; 
+    justify-content: center; /* Mantém o mapa e a legenda no meio exato do ecrã */
+    gap: 5%; /* Um espaçamento elegante entre mapa e legenda */
+    width: 100%;
+    height: 80vh; /* Aumentado para 80vh. Assim o mapa cresce mais e preenche melhor o ecrã */
+}
+
+/* --- MAPA --- */
+.mapa-container {
+    height: 100%;
+    aspect-ratio: 2144 / 1984; 
+    position: relative;
+    border-radius: 0.8em;
+    border: 2px solid #8B5A2B; 
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1); /* Sombra subtil para destacar o mapa do fundo */
+}
+
+.mapa-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Efeitos Hover no SVG --- */
+svg path {
+    fill: transparent;
+    stroke: transparent;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+.zona-amarela:hover { fill: rgba(255, 215, 0, 0.45);  }
+.zona-laranja:hover { fill: rgba(255, 140, 0, 0.45);  }
+.zona-roxa:hover    { fill: rgba(128, 0, 128, 0.45);  }
+.zona-verde:hover   { fill: rgba(34, 139, 34, 0.45);  }
+.zona-azul:hover    { fill: rgba(0, 0, 255, 0.45);    }
+.zona-vermelha:hover{ fill: rgba(255, 0, 0, 0.45);    }
+.zona-rosa:hover    { fill: rgba(255, 192, 203, 0.45);}
+
+
+/* --- LEGENDA LATERAL --- */
+.legenda-container {
+    width: 30%; /* A legenda ocupa agora um pouco mais de espaço para preencher a lateral */
+    max-width: 400px; /* Mas evito que fique gigante num ecrã ultrawide */
+    background-color: #F5EFE6;
+    border-left: 0.2em solid #8B5A2B;
+    border-radius: 0.5em;
+    padding: 2.5%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+
+.legenda-container h2 {
+    margin: 0 0 5% 0;
+    color: #3E2C23;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 130%; /* Título ligeiramente maior para ganhar peso visual */
+}
+
+.legenda-container p {
+    color: #3E2C23;
+    font-family: Arial, sans-serif;
+    font-size: 95%; 
+    margin-bottom: 8%;
+    line-height: 1.5;
+}
+
+.lista-legenda {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-legenda li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6%;
+    color: #8B5A2B;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.lista-legenda span {
+    display: inline-block;
+    width: 16px; 
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 1px solid #8B5A2B; 
+}
+
+.ponto-amarelo { background-color: rgba(255, 215, 0, 0.9);  }
+.ponto-laranja { background-color: rgba(255, 140, 0, 0.9);  }
+.ponto-roxo    { background-color: rgba(128, 0, 128, 0.9);  }
+.ponto-verde   { background-color: rgba(34, 139, 34, 0.9);  }
+.ponto-azul    { background-color: rgba(0, 0, 255, 0.9);    }
+.ponto-vermelho{ background-color: rgba(255, 0, 0, 0.9);    }
+.ponto-rosa    { background-color: rgba(255, 192, 203, 0.9);}
+
+#seccao-quiz {
+    background-color: darkolivegreen; /* Mantém a coerência com o rodapé */
+    padding: 5% 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-container {
+    background-color: #F5EFE6;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 0.8em;
+    padding: 3%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+}
+
+.quiz-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8B5A2B;
+    padding-bottom: 2%;
+    margin-bottom: 4%;
+}
+
+.quiz-cabecalho h2 {
+    color: #3E2C23;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#texto-pergunta {
+    color: #3E2C23;
+    font-size: 130%;
+    margin-bottom: 4%;
+}
+
+.grelha-opcoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    gap: 15px;
+    margin-bottom: 4%;
+}
+
+.opcao-btn {
+    background-color: white;
+    border: 2px solid #8B5A2B;
+    border-radius: 0.5em;
+    padding: 15px;
+    font-size: 110%;
+    color: #3E2C23;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.opcao-btn:hover {
+    background-color: #eaddcb;
+}
+
+/* Desativa botões depois de clicar */
+.opcao-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Atualiza o alinhamento dos botões */
+.quiz-controlos {
+    display: flex;
+    justify-content: space-between; /* Empurra o Anterior para a esquerda e o resto para a direita */
+    align-items: center;
+    margin-top: 4%;
+}
+
+/* Nova classe visual apenas para marcar a opção escolhida (sem dizer se está certa ou errada) */
+.opcao-btn.selecionada {
+    background-color: #8B5A2B;
+    color: white;
+    border-color: #3E2C23;
+}
+
+/* Estilos para a lista de resultados no final */
+.resumo-quiz {
+    text-align: left;
+    margin-top: 25px;
+    font-size: 95%;
+}
+
+.resumo-item {
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.resumo-item.certo { border-left: 5px solid #4CAF50; }
+.resumo-item.errado { border-left: 5px solid #f44336; }
+
+.botao-quiz {
+    background-color: #8B5A2B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 110%;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.botao-quiz:hover {
+    background-color: #3E2C23;
+}
