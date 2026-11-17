@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lince Ibérico</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/LinceIberico1.webp" alt="Lince Ibérico">
+            <img class="slide" src="../FotosAnimais/Floresta/LinceIberico2.avif" alt="Lince Ibérico">
+            <img class="slide" src="../FotosAnimais/Floresta/LinceIberico3.webp" alt="Lince Ibérico">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Lince Ibérico</h1>
+            <h2 class="subtitulo">Lynx pardinus</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O lince-ibérico (Lynx pardinus) é um dos felinos mais ameaçados do mundo e um verdadeiro símbolo da fauna selvagem da Península Ibérica. 
+                        Destaca-se pela sua elegância natural, pelagem dourada salpicada de manchas escuras, uma distinta barba facial e orelhas pontiagudas encimadas 
+                        por pincéis de pelos pretos que potenciam a sua audição. Apesar da sua aparência ágil e de pequeno a médio porte, é um predador feroz e altamente 
+                        especializado, perfeitamente adaptado para se deslocar com destreza e discrição através dos matagais mediterrónicos e zonas de arbustos densos.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_LinceIberico.jpg" alt="Habitat natural do ___">
+                        <p>O lince-ibérico habita preferencialmente zonas de mato mediterrónico denso e florestas abertas de azinheiras e sobreiros, em áreas montanhosas ou colinas 
+                            onduladas que lhe oferecem refúgio e locais seguros para a reprodução. Esta espécie depende de forma quase absoluta de refúgios naturais — como formações 
+                            rochosas, cavidades de árvores ou densos silvados — para se esconder e criar as suas crias longe da perturbação humana. A distribuição da sua área de 
+                            residência está diretamente ligada à presença e abundância do seu principal recurso alimentar, o coelho-bravo.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O lince-ibérico é um carnívoro estrito com uma alimentação altamente especializada. Cerca de 80% a 90% da sua dieta é composta exclusivamente por coelho-bravo. 
+                        Quando este recurso escasseia, o lince pode ocasionalmente consumir pequenos mamíferos, aves ou ungulados de menor porte, como cabritos selvagens. 
+                        Esta dependência alimentar torna-o extremamente vulnerável a flutuações nas populações de coelhos. A sua técnica de caça baseia-se na paciência e na 
+                        emboscada, aproximando-se silenciosamente da presa antes de desferir um bote rápido e letal.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>O lince-ibérico é considerado o felino mais ameaçado de extinção do planeta, tendo estado à beira da desaparição total no início do século XXI antes de programas 
+                            de conservação reverterem a tendência.</li>
+                        <li>Os característicos pincéis de pelo escuro nas pontas das orelhas funcionam como antenas acústicas, ajudando o animal a detetar sons direcionados e a localizar 
+                            presas na vegetação densa.</li>
+                        <li>Cada indivíduo possui um padrão único de pintas e manchas no pelo, funcionando quase como uma "impressão digital" que permite aos investigadores identificar 
+                            cada lince com precisão.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos Linces Ibéricos</h3>
+                    <p>No Zoo Jonçela, dois magníficos linces-ibéricos — o Snoopy e a Ibéria — encantam os visitantes com a sua postura cautelosa e olhar penetrante. Com 5 anos de idade, 
+                        o Zorzal é um macho ágil e curioso que mede cerca de 90 centímetros de comprimento e pesa 13 kg. A Ibéria, com 4 anos, apresenta uma compleição ligeiramente mais esguia, 
+                        medindo 85 centímetros e pesando cerca de 10 kg. Ambos partilham um recinto enriquecido que simula o seu habitat natural mediterrónico, onde demonstram toda a discrição, 
+                        agilidade e instintos típicos da sua espécie.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Carnivora</dd>
+
+                    <dt>Família</dt>
+                    <dd>Felidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Lynx</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Lynx pardinus</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>85 a 110 centímetros</dd>
+
+                    <dt>Peso</dt>
+                    <dd>9 a 15 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>10 a 13 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 2 meses</dd>
+                    <dd>Altura: 10 a 15 centímetros</dd>
+                    <dd>Peso: 200 a 250 gramas</dd>
+                </dl>
+
+                <h3>Já ouviu algum Lince Ibérico?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/Som_LinceIberico.mp3"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/ur" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

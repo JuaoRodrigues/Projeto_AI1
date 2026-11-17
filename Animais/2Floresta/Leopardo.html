@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leopardo</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Leopardo1.jpg" alt="Leopardo">
+            <img class="slide" src="../FotosAnimais/Floresta/Leopardo2.jpg" alt="Leopardo">
+            <img class="slide" src="../FotosAnimais/Floresta/Leopardo3.jpg" alt="Leopardo">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Leopardo</h1>
+            <h2 class="subtitulo">Panthera pardus</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O leopardo (Panthera pardus) é um dos felinos mais ágeis, adaptáveis e furtivos do planeta, destacando-se pela sua incrível capacidade de sobrevivência em diversos habitats de África e 
+                        da Ásia. Dotado de um corpo musculoso, patas curtas e robustas e uma longa cauda que o ajuda a manter o equilíbrio, este magnífico predador possui uma bela pelagem amarelada ou 
+                        dourada adornada com manchas escuras em forma de anel, conhecidas como rosetas. A sua extraordinária força e destreza física permitem-lhe dominar a arte da discrição, tornando-o num 
+                        dos caçadores mais eficientes da natureza.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Leopardo.jpg" alt="Habitat natural do Leopardo">
+                        <p>O leopardo é o mais versátil dos grandes felinos, habitando uma enorme variedade de ecossistemas que vão desde savanas abertas, florestas tropicais densas e bosques arbustivos até 
+                            zonas montanhosas rochosas e regiões semi-áridas. Ao contrário de outros grandes predadores que dependem de territórios específicos, o leopardo adapta-se com facilidade à presença 
+                            humana e a diferentes altitudes. Passa grande parte do dia escondido no silêncio da vegetação densa ou abrigado na ramagem alta das árvores, onde descansa em total segurança.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O leopardo é um carnívoro estrito, solitário e um predador de emboscada com hábitos crepusculares e noturnos. A sua alimentação é extremamente variada, incluindo antílopes de médio 
+                            porte, gazelas, javalis, primatas e pequenos mamíferos ou aves. Uma das suas caraterísticas mais marcantes é a capacidade de içar presas que pesam muito mais do que ele próprio 
+                            para o topo das árvores, protegendo assim o alimento contra o roubo de outros predadores concorrentes, como leões ou hienas.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>O leopardo é um trepador excecional, passando grande parte do tempo nas árvores onde descansa, come e esconde as suas presas com uma agilidade impressionante.</li>
+                        <li>Possuem uma força descomunal para o seu tamanho, sendo capazes de carregar para cima de uma árvore uma presa com o dobro do seu próprio peso.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos Leopardos</h3>
+                    <p>No Zoo Jonçela, um magnífico e discreto par de leopardos — o elegante macho Leonardo e a atenta fêmea Zara — desperta a admiração de todos os visitantes com a sua postura majestosa. Com 6 anos de 
+                        idade, o Leonardo é um macho robusto que mede cerca de 1,4 metros de corpo (com uma cauda de quase 90 cm) e pesa perto de 65 kg. A Zara, com 5 anos, apresenta uma compleição ligeiramente mais 
+                        esguia, medindo 1,3 metros e pesando cerca de 50 kg. Ambos partilham um recinto arborizado e enriquecido com plataformas elevadas, onde demonstram toda a sua agilidade, força e 
+                        instintos naturais.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Carnivora</dd>
+
+                    <dt>Família</dt>
+                    <dd>Felidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Panthera</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Panthera pardus</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>1,0 a 1,9 metros de comprimento</dd>
+
+                    <dt>Peso</dt>
+                    <dd>30 a 90 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>12 a 17 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 3 meses</dd>
+                    <dd>Altura: 20 a 15 centímetros</dd>
+                    <dd>Peso: 280 a 500 gramas</dd>
+                </dl>
+
+                <h3>Já ouviu algum Leopardo?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/Som_Pantera.mp3"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

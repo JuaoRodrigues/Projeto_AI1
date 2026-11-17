@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adax</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Adax1.jpg" alt="Adax">
+            <img class="slide" src="../FotosAnimais/Floresta/Adax2.jpg" alt="Adax">
+            <img class="slide" src="../FotosAnimais/Floresta/Adax3.jpg" alt="Adax">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Adax</h1>
+            <h2 class="subtitulo">Addax nasomaculatus</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O adax (Addax nasomaculatus), também conhecido como antílope-de-chifres-em-saca-rolhas, é um dos mamíferos mais emblemáticos e perfeitamente adaptados aos ambientes 
+                        áridos e extremos do deserto do Sara. Distingue-se de imediato pela sua impressionante pelagem que varia entre o tom acastanhado ou cinzento no inverno e um 
+                        branco-amarelado quase brilhante no verão — o que ajuda a refletir a luz solar intensa —, além de possuir uma distinta mancha escura em forma de "X" na testa e 
+                        longos e finos chifres espiralados presentes em ambos os sexos. Dotado de cascos largos e espalmados que funcionam como raquetes naturais, este animal consegue 
+                        caminhar com facilidade sobre a areia fofa das dunas sem afundar.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Adax.jpg" alt="Habitat natural do Adax">
+                        <p>O adax habita exclusivamente regiões desérticas e semi-desérticas remotas, dunas de areia profunda e planícies pedregosas áridas do norte de África. Sendo 
+                            um dos animais mais especializados na sobrevivência em ambientes áridos, é capaz de suportar condições extremas de calor e seca sem acesso a água superficial, 
+                            obtendo toda a humidade de que necessita a partir do orvalho matinal e da vegetação suculenta que consome. Movimenta-se habitualmente em pequenos grupos familiares 
+                            nómadas, procurando constantemente áreas onde ocorram chuvas esporádicas e o crescimento de novas ervas.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O adax é um herbívoro ruminante de dieta estritamente seletiva e altamente adaptada à escassez do deserto. A sua alimentação diária é composta essencialmente por relvas 
+                        rasteiras resistentes, rebentos secos, arbustos espinhosos do deserto, raízes subterrâneas e folhagem suculenta. Graças ao seu metabolismo extremamente eficiente e à capacidade 
+                        de concentrar a urina para reter líquidos, consegue sobreviver com quantidades mínimas de água, alimentando-se principalmente durante as horas mais frescas da noite e do amanhecer 
+                        para evitar o calor escaldante.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>O adax é uma das espécies de grandes mamíferos mais criticamente ameaçadas do planeta, tendo a sua população selvagem sido dizimada pela caça excessiva e pela perda de habitat no deserto.</li>
+                        <li>Os seus chifres longos e graciosamente espiralados podem atingir mais de um metro de comprimento nos machos, conferindo-lhe uma silhueta inconfundível contra a paisagem arenosa.</li>
+                        <li>Possuem uma pelagem de inverno mais densa e escura que os protege contra as noites geladas do deserto, mudando para uma pelagem clara e refletora quando chega o verão.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos Adaxes</h3>
+                    <p>No Zoo Jonçela, um pequeno e resistente grupo de adaxes — encabeçado pelo majestoso macho Sahara e acompanhado pelas fêmeas Duna e Zahara — destaca-se na zona árida do parque. Com 6 anos de idade, 
+                        o Sahara ostenta chifres espiralados perfeitos com 95 centímetros de comprimento, medindo cerca de 1,6 metros de corpo e pesando perto de 125 kg. A Duna e a Zahara, com 4 e 5 anos, apresentam uma 
+                        compleição ligeiramente mais esguia, pesando cerca de 85 kg cada. O grupo partilha um amplo habitat arenoso e rochoso que simula as condições do seu ambiente natural, demonstrando uma notável 
+                        calma e resistência.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Artiodactyla</dd>
+
+                    <dt>Família</dt>
+                    <dd>Bovidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Addax</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Addax nasomaculatus</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>1,2 a 1,7 metros de comprimento</dd>
+
+                    <dt>Peso</dt>
+                    <dd>60 a 135 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>19 a 25 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 9 meses</dd>
+                    <dd>Altura: 60 a 70 centímetros</dd>
+                    <dd>Peso: 5 a 7 quilos</dd>
+                </dl>
+
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

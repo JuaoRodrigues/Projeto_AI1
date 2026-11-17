@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lémur</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Lemur1.jpg" alt="Lémur">
+            <img class="slide" src="../FotosAnimais/Floresta/Lemur2.webp" alt="Lémur">
+            <img class="slide" src="../FotosAnimais/Floresta/Lemur3.jpg" alt="Lémur">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Lémur</h1>
+            <h2 class="subtitulo">Lemur catta</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O lémure-de-cauda-anelada (Lemur catta) é um dos primatas mais carismáticos e fáceis de reconhecer do mundo, endémico da ilha de Madagáscar. 
+                        Destaca-se de imediato pela sua impressionante e longa cauda adornada com anéis alternados pretos e brancos, que funciona como um importante sinalizador 
+                        visual e ferramenta de equilíbrio. Com uma pelagem cinzenta nas costas, ventre claro e um característico "óculos" escuro à volta dos olhos expressivos, 
+                        este animal alia uma enorme agilidade nas árvores a um comportamento altamente social e curioso.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Lemur.jpg" alt="Habitat natural do Lémur">
+                        <p>O lémure-de-cauda-anelada habita preferencialmente florestas de galeria, bosques secos espinhosos e áreas arbustivas abertas do sul e sudoeste de 
+                            Madagáscar. Ao contrário de muitos outros lémures de hábitos estritamente arborícolas, esta espécie passa uma parte considerável do seu tempo a forragear e 
+                            a deslocar-se no solo, adaptando-se com facilidade a terrenos rochosos e secos. Dependem de fontes de água doce e de árvores frondosas que lhes sirvam de abrigo e 
+                            local de descanso durante a noite.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O lémure-de-cauda-anelada é um primata omnívoro de dieta flexível e oportunista, embora fortemente herbívora. A maior parte da sua alimentação é composta por frutos 
+                        silvestres, flores, folhas tenras, casca de árvores e seiva. Ocasionalmente, complementam a dieta com pequenas insector e matéria vegetal diversa, aproveitando a 
+                        abundância sazonal nas épocas de chuvas. Passam grande parte da manhã a banhar-se ao sol de braços abertos antes de iniciarem as suas rotinas diárias de alimentação em grupo.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>A célebre cauda anelada não serve para agarrar ramos, mas é erguida bem alto em forma de "bandeira" para manter o grupo unido durante os deslocamentos na vegetação alta.</li>
+                        <li>Os lémures vivem em sociedades matriarcais estritas, onde as fêmeas lideram o grupo, tendo prioridade absoluta no acesso à comida e aos melhores locais de descanso.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos Lémures</h3>
+                    <p>No Zoo Jonçela, um animado e saltitante grupo de lémures-de-cauda-anelada — liderado pela matriarca Zula e acompanhado pelo curioso macho Kofi — é uma das grandes atrações para os visitantes. 
+                        Com 6 anos de idade, a Zula exibe uma liderança firme e uma cauda perfeita com 14 anéis pretos, medindo cerca de 45 centímetros de corpo e pesando 2,6 kg. O Kofi, com 5 anos, destaca-se pela 
+                        sua agilidade e energia constante, pesando cerca de 2,3 kg. O grupo partilha um amplo recinto arborizado com estruturas de cordas e troncos, onde demonstram a sua fascinante vida social.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Primates</dd>
+
+                    <dt>Família</dt>
+                    <dd>Lemuridae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Lemur</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Lemur catta</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>39 a 46 centímetros</dd>
+
+                    <dt>Peso</dt>
+                    <dd>2,2 a 3,5 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>16 a 19 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 4 a 5 meses</dd>
+                    <dd>Altura: 15 a 20 centímetros</dd>
+                    <dd>Peso: 60 a 100 gramas</dd>
+                </dl>
+
+                <h3>Já ouviu algum Lémur?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/Som_Lemur.mp3"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href="../.html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

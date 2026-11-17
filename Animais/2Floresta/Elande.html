@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elande</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Elande1.jpg" alt="Elande">
+            <img class="slide" src="../FotosAnimais/Floresta/Elande2.jpg" alt="Elande">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Elande</h1>
+            <h2 class="subtitulo">Taurotragus oryx</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O elande (Taurotragus oryx), também conhecido como elande-do-cabo, é o maior e mais pesado antílope do mundo, combinando um porte imponente com uma surpreendente agilidade. 
+                        Apesar da sua aparência robusta que se assemelha à de um bovino de grande porte, destaca-se pela sua pelagem de tom acastanhado ou cinzento-azulado, finas listras verticais no 
+                        dorso e magníficos chifres espiralados retos presentes em ambos os sexos. Dotado de uma papada proeminente sob o pescoço que ajuda na regulação da temperatura corporal, este 
+                        animal alia uma presença majestosa a uma capacidade notável de adaptação a diferentes tipos de paisagens abertas.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Elande.jpg" alt="Habitat natural do Elande">
+                        <p>O elande habita preferencialmente zonas de savana aberta, pastagens extensas, bosques arbustivos e regiões montanhosas áridas ou semi-áridas do sul e leste do continente africano. 
+                            Ao contrário de outras espécies de antílopes que dependem de fontes permanentes de água doce, o elande consegue obter grande parte da humidade de que necessita diretamente através 
+                            do consumo de folhagem suculenta, o que lhe permite prosperar em áreas mais secas. Movem-se frequentemente em manadas fluidas que podem variar desde algumas dezenas até centenas 
+                            de indivíduos durante as migrações sazonais.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O elande é um herbívoro ruminante de dieta mista e versátil, com uma forte preferência pelo pastoreio de rebentos arbustivos, folhas, flores e caules tenros. Embora consuma uma quantidade 
+                        considerável de erva fresca, especialmente após as chuvas, a maior parte da sua alimentação diária é composta por folhagem de árvores e arbustos de altura média, utilizando os seus 
+                        longos chifres para puxar os ramos mais altos para baixo. Esta flexibilidade alimentar permite-lhe aproveitar recursos que outras espécies ignoram.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>Apesar do seu peso colossal que pode ultrapassar os 900 quilos nos machos mais velhos, os elandes são saltadores excecionais, capazes de transpor facilmente barreiras de até dois 
+                            metros de altura a partir de uma posição parada.</li>
+                        <li>Produzem frequentemente um som de clique distinto ao caminhar, que se acredita ser gerado por um tendão ou articulação dos joelhos ao esticar as patas traseiras.</li>
+                        <li></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos Elandes</h3>
+                    <p>No Zoo Jonçela, um impressionante e pacífico grupo de elandes — encabeçado pelo imponente macho Atlas e acompanhado pelas fêmeas Flora e Bia — destaca-se na zona das grandes planícies 
+                        do parque. Com 7 anos de idade, o Atlas ostenta chifres espiralados impressionantes com quase um metro de comprimento, medindo cerca de 2,8 metros de comprimento e pesando perto de 750 kg. 
+                        A Flora e a Bia, com 5 e 4 anos respetivamente, apresentam uma compleição ligeiramente mais leve, pesando cerca de 450 kg cada. O grupo partilha um vasto prado arborizado que recria o seu 
+                        habitat natural, demonstrando uma convivência calma e harmoniosa.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Artiodactyla</dd>
+
+                    <dt>Família</dt>
+                    <dd>Bovidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Taurotragus</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Taurotragus oryx</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>2,0 a 3,4 metros de comprimento</dd>
+
+                    <dt>Peso</dt>
+                    <dd>300 a 940 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>15 a 20 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 9 meses</dd>
+                    <dd>Altura: 80 a 100 centímetros</dd>
+                    <dd>Peso: 20 a 30 quilos</dd>
+                </dl>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

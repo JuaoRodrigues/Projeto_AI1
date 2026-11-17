@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Axis1.jpg" alt="Axis">
+            <img class="slide" src="../FotosAnimais/Floresta/Axis2.jpg" alt="Axis">
+            <img class="slide" src="../FotosAnimais/Floresta/Axis3.jpg" alt="Axis">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Axis</h1>
+            <h2 class="subtitulo">Axis axis</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O cervo-axis (Axis axis), também conhecido como cervo-pintado, é considerado por muitos um dos cérvidos mais bonitos e elegantes do mundo. 
+                        Distingue-se de imediato pela sua impressionante pelagem avermelhada ou castanha-dourada que se mantém permanentemente salpicada de distintas 
+                        manchas brancas ao longo de toda a vida adulta. Dotado de uma compleição esguia, membros longos e finas hastes tripartidas nos machos, este animal 
+                        alia uma grande graciosidade de movimentos a uma enorme agilidade, permitindo-lhe escapar com facilidade por entre a vegetação rasteira dos 
+                        seus habitats de origem.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Axis.jpg" alt="Habitat natural dos Axis">
+                        <p>O cervo-axis habita preferencialmente florestas abertas, zonas de bosque caducifólio e savanas arborizadas que alternem com clareiras de pastagem 
+                            e mantenham sempre fontes de água doce por perto. Estes animais evitam florestas densas e fechadas, preferindo áreas onde a luz solar penetra e 
+                            promove o crescimento de ervas tenras, além de contarem com a proteção de árvores frondosas para se abrigarem do calor intenso. Embora seja originário 
+                            do subcontinente indiano, adaptou-se com enorme sucesso a várias regiões temperadas e subtropicais pelo mundo.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O cervo-axis é um herbívoro ruminante de dieta mista e altamente adaptável, alternando entre o pastoreio e a dentição de folhagem. Cerca de 60% a 70% da sua 
+                        alimentação diária é composta por ervas frescas e rebentos tenros, sendo complementada por folhas de arbustos, flores, casca macia e frutos caídos no solo. 
+                        A sua atividade de alimentação concentra-se habitualmente nas horas mais frescas do dia, como o amanhecer e o entardecer, aproveitando a noite ou o meio-dia 
+                        para ruminar em segurança na companhia do grupo.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>Ao contrário de muitas outras espécies de veados cujas crias perdem as pintas brancas ao crescer, o cervo-axis conserva orgulhosamente a sua pelagem 
+                            salpicada durante toda a vida adulta.</li>
+                        <li>Vivem em complexas manadas sociais que podem reunir de dezenas a centenas de indivíduos, mantendo frequentemente uma estreita relação de interajuda 
+                            e alerta com bandos de macacos.</li>
+                        <li>Os machos não possuem uma época de reprodução estritamente fixa, podendo desenvolver e perder as suas hastes ossificadas em diferentes alturas do ano 
+                            consoante as condições locais.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos Axis</h3>
+                    <p>No Zoo Jonçela, um grupo dinâmico de cervos-axis — encabeçado pelo elegante macho Rajah e acompanhado pelas fêmeas Maya e Tara — atrai a atenção de todos os 
+                        visitantes pela sua constante atividade. Com 5 anos de idade, o Rajah ostenta um par de hastes robustas com três pontas e mede cerca de 1,4 metros de comprimento, 
+                        pesando perto de 80 kg. A Maya e a Tara, ambas com 3 anos, apresentam uma compleição mais leve e ágil, pesando cerca de 50 kg cada. O grupo partilhe um espaçoso 
+                        prado arborizado que recria o seu habitat natural, demonstrando uma convivência pacífica e curiosa.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Artiodactyla</dd>
+
+                    <dt>Família</dt>
+                    <dd>Cervidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Axis</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Axis axis</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>1,1 a 1,7 metros de comprimento</dd>
+
+                    <dt>Peso</dt>
+                    <dd>45 a 85 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>9 a 14 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 7 a 8 meses</dd>
+                    <dd>Altura: 35 a 45 centímetros</dd>
+                    <dd>Peso: 3 a 5 gramas</dd>
+                </dl>
+
+                <h3>Já ouviu algum Axis?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/Som_Axis.mp3"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

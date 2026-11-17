@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamingo</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Flamingo1.jpg" alt="Flamingo">
+            <img class="slide" src="../FotosAnimais/Floresta/Flamingo2.jpg" alt="Flamingo">
+            <img class="slide" src="../FotosAnimais/Floresta/Flamingo3.jpg" alt="Flamingo">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Flamingo</h1>
+            <h2 class="subtitulo">Phoenicopterus roseus</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O flamingo-comum (Phoenicopterus roseus) é uma das aves mais emblemáticas e inconfundíveis do planeta, destacando-se pela sua silhueta esbelta e pela espetacular coloração rosada da sua 
+                        plumagem. Dotado de pernas extremamente longas e finas, um pescoço longo e elegante e um bico robusto e curvado com uma estrutura filtrante única, este animal alia uma postura graciosa 
+                        a uma enorme resistência. Vive habitualmente em grandes colónias barulhentas, deslocando-se com facilidade tanto a caminhar pelas margens lodosas como a voar em formações ordenadas 
+                        com o pescoço e as patas esticados.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Flamingo.jpg" alt="Habitat natural do Flamingo">
+                        <p>O flamingo-comum habita preferencialmente zonas húmidas de águas pouco profundas, estuários, lagoas costeiras salgadas e grandes lagos alcalinos ou salinos. Estas aves dependem de 
+                            ecossistemas aquáticos abertos e extensos que lhes oferecem lodaçais seguros para a alimentação e ilhéus isolados ou margens de lama afastadas de predadores terrestres para a 
+                            construção dos seus ninhos de lama em forma de tronco de cone. A sua distribuição natural estende-se por regiões subtropicais e temperadas de África, sul da Europa e sudoeste e 
+                            centro da Ásia.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O flamingo-comum é um alimentador por filtração altamente especializado. A sua dieta é composta essencialmente por pequenos crustáceos (como a Artemia salina), moluscos, larvas de insetos, 
+                        algas microscópicas e matéria orgânica recolhida do fundo lodoso. Para se alimentar, o flamingo inverte a cabeça e utiliza a língua como uma bomba de sucção no interior do bico curvado, 
+                        filtrando a água e retendo os nutrientes. É precisamente a ingestão de pigmentos carotenoides presentes nesses pequenos crustáceos e algas que confere à sua plumagem os tons rosados 
+                        característicos.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>As crias de flamingo nascem com uma plumagem cinzenta ou branca e bico reto, demorando vários anos a adquirir a coloração rosada e a curvatura típica do bico dos adultos.</li>
+                        <li>Dormem frequentemente empoleirados sobre apenas uma perna, um mecanismo fisiológico que ajuda a reduzir a perda de calor corporal através dos membros desprovidos de penas.</li>
+                        <li>Os ninhos são construídos com lama amontoada em forma de pequeno vulcão, no topo do qual a fêmea deposita um único ovo, que ambos os progenitores incubam de forma alternada.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos Flamingos</h3>
+                    <p>No Zoo Jonçela, uma colónia animada e colorida de flamingos-comuns — liderada pelo experiente macho Flamel e acompanhada pelas fêmeas Rosa e Coral — atrai todos os olhares na zona 
+                        lagunar do parque. Com 8 anos de idade, o Flamel exibe uma plumagem de um tom rosa vivo impressionante, medindo cerca de 1,4 metros de altura e pesando perto de 3,5 kg. 
+                        A Rosa e a Coral, com 6 e 5 anos, apresentam uma compleição igualmente elegante e plumagem rosada brilhante, pesando cerca de 3 kg cada. O grupo partilha um amplo habitat 
+                        aquático com margens de lodo simuladas, onde demonstram o seu comportamento social fascinante.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Aves</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Phoenicopteriformes</dd>
+
+                    <dt>Família</dt>
+                    <dd>Phoenicopteridae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Phoenicopterus</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Phoenicopterus roseus</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>1,2 a 1,5 metros de altura</dd>
+
+                    <dt>Peso</dt>
+                    <dd>2,1 a 4,1 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>20 a 30 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 30 dias</dd>
+                    <dd>Altura: 15 a 20 centímetros</dd>
+                    <dd>Peso: 100 a 140 gramas</dd>
+                </dl>
+
+                <h3>Já ouviu algum Flamingo?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/Som_Flamingo.mp3"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

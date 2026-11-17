@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suricata</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Suricata1.jpg" alt="Suricata">
+            <img class="slide" src="../FotosAnimais/Floresta/Suricata2.jpg" alt="Suricata">
+            <img class="slide" src="../FotosAnimais/Floresta/Suricata3.jpg" alt="Suricata">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Suricata</h1>
+            <h2 class="subtitulo"></h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O suricata (Suricata suricatta) é um pequeno e fascinante mamífero pertencente à família 
+                        dos mangustos, destacando-se pela sua natureza extremamente sociável e comportamento cooperativo.
+                        Conhecido pela sua icónica postura ereta, este ágil animal simboliza a resiliência nas áridas 
+                        savanas e desertos do sul de África. Apesar do seu tamanho reduzido, é uma espécie incrivelmente
+                        engenhosa, capaz de construir redes complexas de túneis subterrâneos e de trabalhar em equipa para
+                        garantir a proteção e o sustento de toda a colónia.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Suricatas.jpg" alt="Habitat natural do ___">
+                        <p>O suricata habita predominantemente planícies áridas, savanas abertas e zonas semidesérticas,
+                            como o deserto do Kalahari, onde a terra seca facilita a escavação. Estes animais constroem 
+                            ou aproveitam vastos sistemas de tocas subterrâneas com múltiplas entradas, que lhes oferecem 
+                            abrigo seguro contra predadores e temperaturas extremas. Durante o dia, exploram ativamente as 
+                            imediações da toca em busca de alimento, mantendo sempre o seu território perfeitamente vigiado.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O suricata é um animal com uma dieta baseada maioritariamente em insetos, mas com grande flexibilidade.
+                        A base da sua alimentação é composta por insetos, aranhas, centopeias e escorpiões. Para complementar, 
+                        consomem pequenos répteis, ovos, raízes e tubérculos. Esta dieta diversificada e rica em humidade é 
+                        crucial, pois permite-lhes obter grande parte da água de que necessitam para sobreviver no seu ambiente 
+                        árido e seco.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>As manchas escuras à volta dos olhos funcionam como uns "óculos de sol" naturais, 
+                            reduzindo o brilho do sol e ajudando-os a detetar predadores aéreos.</li>
+                        <li>Possuem um sistema de vigia rotativo: enquanto o grupo procura alimento, 
+                            um "sentinela" ergue-se nas patas traseiras num ponto alto para alertar a 
+                            colónia contra perigos.</li>
+                        <li>Têm uma imunidade surpreendente ao veneno de várias espécies de escorpiões e 
+                            cobras venenosas, que frequentemente fazem parte do seu menu diário.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos suricatas</h3>
+                    <p>No Zoo Jonçela, um animado clã de cinco suricatas, liderado pela fêmea alfa Tiomax e pelo macho Feliciano, 
+                        traz vida e constante movimento ao recinto. Com idades entre os 2 e os 5 anos, os membros do grupo 
+                        pesam em média cerca de 800 gramas cada e medem perto de 30 centímetros de comprimento. Partilham um 
+                        recinto desenhado ao detalhe com areia apropriada para escavações e rochas altas, onde demonstram 
+                        diariamente a sua forte organização social e o seu infalível instinto de vigilância.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Carnivora</dd>
+
+                    <dt>Família</dt>
+                    <dd>Herpestidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Suricata</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Suricata Suricatta</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>0,25 a 0,35 metros</dd>
+
+                    <dt>Peso</dt>
+                    <dd>0,7 a 1 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>12 a 14 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 2,5 meses</dd>
+                    <dd>Altura: 5 a 10 centímetros</dd>
+                    <dd>Peso: 25 a 35 gramas</dd>
+                </dl>
+
+                <h3>Já ouviu algum Suricata?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

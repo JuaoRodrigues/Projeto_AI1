@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantera Negra</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/PanteraNegra1.jpg" alt="Pantera Negra">
+            <img class="slide" src="../FotosAnimais/Floresta/PanteraNegra2.jpg" alt="Pantera Negra">
+            <img class="slide" src="../FotosAnimais/Floresta/PanteraNegra3.avif" alt="Pantera Negra">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Pantera Negra</h1>
+            <h2 class="subtitulo">Panthera pardus</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>A pantera-negra não é uma espécie distinta de felino, mas sim uma variação genética de coloração escura — conhecida como melanismo — que ocorre principalmente em leopardos (Panthera pardus) 
+                        e jaguares (Panthera onca). Sob a sua impressionante pelagem de um negro profundo e lustroso, continuam a esconder-se as habituais rosetas e manchas características da espécie, que se 
+                        tornam visíveis sob a luz direta do sol. Dotada de uma musculatura poderosa, garras retráteis e sentidos altamente apurados, este magnífico predador alia uma agilidade extraordinária nas 
+                        árvores a uma força física formidável, sendo um dos caçadores mais furtivos e eficientes do reino animal.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_PanteraNegra.jpg" alt="Habitat natural da Pantera Negra">
+                        <p>A pantera-negra habita preferencialmente florestas tropicais densas, zonas de selva fechada, bosques húmidos e regiões montanhosas arborizadas, com particular incidência na África 
+                            Subsariana e nas florestas tropicais da América Central e do Sul. A coloração escura confere-lhe uma vantagem evolutiva significativa em ambientes de vegetação densa e sombra profunda, 
+                            permitindo-lhe camuflar-se na perfeição enquanto espreita as presas. São animais solitários e extremamente territoriais, que passam grande parte do dia descansando discretamente entre 
+                            a ramagem alta das árvores ou em abrigos rochosos.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>A pantera-negra é um carnívoro estrito e um predador de topo com hábitos essencialmente crepusculares e noturnos. A sua alimentação é altamente variada, incluindo antílopes de médio porte, 
+                        veados, javalis, macacos e pequenos mamíferos. Graças à sua enorme força física, é capaz de caçar presas que pesam tanto ou mais do que ela própria, arrastando frequentemente as suas 
+                        carcaças para o alto das árvores para as proteger de outros predadores concorrentes, como hienas ou leões.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>O melanismo que origina a cor negra da pelagem é uma caraterística genética recessiva; no entanto, duas panteras negras podem ocasionalmente ter crias com o padrão normal de manchas.</li>
+                        <li>Possuem uma visão noturna excecional, sendo capazes de detetar o movimento de uma presa na escuridão quase total graças a uma membrana ocular refletora chamada tapetum lucidum.</li>
+                        <li>As panteras são felinos excelentes nadadores, não hesitando em atravistar rios caudalosos ou em caçar presas aquáticas quando a oportunidade surge.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">As nossas Panteras Negras</h3>
+                    <p>No Zoo Jonçela, dois magníficos exemplares de panteras-negras — os irmãos Benjamim e Bujas — fascinam diariamente todos os visitantes pela sua postura elegante e olhar misterioso. Com 6 anos de 
+                        idade, o Bujas é um macho musculado e imponente que mede cerca de 1,4 metros de corpo (com uma cauda de quase 90 cm) e pesa perto de 70 kg. A Benjamim, com a mesma idade, exibe uma compleição 
+                        igualmente poderosa e atlética, medindo 1,35 metros e pesando cerca de 65 kg. Ambos partilham um recinto arborizado e enriquecido que simula o seu habitat de floresta densa, onde 
+                        demonstram toda a sua agilidade, força e curiosidade natural.</p>
+                </section>
+            </div> 
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Carnivora</dd>
+
+                    <dt>Família</dt>
+                    <dd>Felidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Panthera</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Panthera pardus</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>1,0 a 1,8 metros de comprimento</dd>
+
+                    <dt>Peso</dt>
+                    <dd>40 a 90 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>12 a 15 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 3 meses</dd>
+                    <dd>Altura: 20 a 25 centímetros</dd>
+                    <dd>Peso: 280 a 500 gramas</dd>
+                </dl>
+
+                <h3>Já ouviu alguma Pantera Negra?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/Som_Pantera.mp3"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nialas</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Niala1.jpg" alt="Niala">
+            <img class="slide" src="../FotosAnimais/Floresta/Niala2.jpg" alt="Niala">
+            <img class="slide" src="../FotosAnimais/Floresta/Niala3.jpg" alt="Niala">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Niala</h1>
+            <h2 class="subtitulo">Tragelaphus angasii</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>A niala (Tragelaphus angasii) é um dos antílopes mais graciosos e elegantes de África, destacando-se pelo notável dimorfismo sexual. Enquanto as fêmeas e 
+                        as crias ostentam uma pelagem avermelhada e brilhante adornada com finas listras brancas verticais, os machos adultos apresentam um tom castanho-escuro 
+                        quase cinzento, uma crina peluda nas costas e impressionantes chifres espiralados com pontas amarelas. Apesar da sua aparência pacífica e de preferirem 
+                        mover-se com extrema cautela através de vegetação densa, são animais extremamente atentos e capazes de se deslocar com grande agilidade perante qualquer 
+                        sinal de perigo.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Niala.jpg" alt="Habitat natural da Niala">
+                        <p>A niala habita preferencialmente zonas de savana arborizada densa, matagais espessos e florestas de transição que fiquem sempre muito próximas de fontes 
+                            de água permanente. Estes antílopes evitam planícies abertas e expostas, dependendo da cobertura de arbustos densos e árvores frondosas para se refugiarem 
+                            dos predadores e para encontrarem sombra durante as horas mais quentes do dia. A sua distribuição natural concentra-se sobretudo na região sudeste do 
+                            continente africano, adaptando-se perfeitamente a vales fluviais e áreas pantanosas arborizadas.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>A niala é um herbívoro de dieta flexível e mista, com uma forte tendência para o pastoreio de folhagem e rebentos. Cerca de 70% a 80% da sua alimentação diária 
+                        é composta por folhas tenras, arbustos, flores, caules e frutos caídos no chão, complementando ocasionalmente com ervas frescas. Durante as épocas de maior 
+                        secura, a sua capacidade de selecionar os nutrientes mais ricos e a dependência de vegetação ribeirinha permitem-lhe sobreviver em locais onde outras espécies 
+                        de antílopes enfrentam escassez alimentar.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>Os machos adultos adotam frequentemente posturas de exibição lateral para parecerem maiores perante os rivais, inflando o pelo da crina dorsal e caminhando 
+                            lentamente com passos rígidos.</li>
+                        <li>As crias recém-nascidas passam os primeiros dias de vida escondidas num abrigo de vegetação densa, sendo visitadas apenas esporadicamente pela mãe para 
+                            amamentação até ganharem força para se juntarem ao grupo.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">As nossas Nialas</h3>
+                    <p>No Zoo Jonçela, um grupo harmonioso de nialas — liderado pelo majestoso macho Kito e acompanhado pelas fêmeas Zola e Nandi — encanta todos os visitantes pela sua elegância. 
+                        Com 6 anos de idade, o Kito possui uma pelagem escura imponente e chifres magnificamente espiralados que medem perto de 75 centímetros, pesando cerca de 115 kg. A Zola e a Nandi, 
+                        com 4 e 3 anos respetivamente, exibem a pelagem avermelhada caraterística e uma compleição mais ágil, pesando em torno de 65 kg cada. Todas partilham um recinto arborizado que 
+                        simula o seu habitat natural, onde demonstram a sua atitude calma e curiosa.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Artiodactyla</dd>
+
+                    <dt>Família</dt>
+                    <dd>Bovidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Tragelaphus</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Tragelaphus angasii</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>1,3 a 1,8 metros de comprimento</dd>
+
+                    <dt>Peso</dt>
+                    <dd>55 a 130 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>12 a 15 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 7 meses</dd>
+                    <dd>Altura: 40 a 50 centímetros</dd>
+                    <dd>Peso: 4 a 6 quilos</dd>
+                </dl>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

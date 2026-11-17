@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipopotamo Pigmeu</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/HipopotamoPigmeu1.webp" alt="Hipopotamo Pigmeu">
+            <img class="slide" src="../FotosAnimais/Floresta/HipopotamoPigmeu2.webp" alt="Hipopotamo Pigmeu">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Hipopotamo Pigmeu</h1>
+            <h2 class="subtitulo">Choeropsis liberiensis</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O hipopótamo-pigmeu (Choeropsis liberiensis) é um dos mamíferos mais fascinantes e misteriosos das florestas tropicais da África Ocidental. Sendo uma 
+                        espécie muito mais solitária e discreta do que o seu famoso parente de tamanho regular, destaca-se pelo corpo compacto, pernas curtas e robustas e por 
+                        uma cabeça arredondada de aspeto pacífico. A sua pele espessa e escura secreta uma substância oleosa de tom rosado — frequentemente apelidada de "suor 
+                        de sangue" — que funciona como um protetor solar natural e um hidratante para mantê-la protegida da secura e de infeções na vegetação densa.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_HipopotamoPigmeu.jpg" alt="Habitat natural do Hipopotamo Pigmeu">
+                        <p>O hipopótamo-pigmeu habita preferencialmente zonas florestais densas e húmidas, pântanos arborizados e margens de rios de águas calmas nas profundezas das florestas 
+                            tropicais da África Ocidental, com particular destaque para a Libéria, Serra Leoa, Guiné e Costa do Marfim. Ao contrário dos grandes hipopótamos, passam menos tempo 
+                            imersos na água, preferindo mover-se por trilhos estreitos criados por eles próprios na vegetação rasteira e abrigando-se durante o dia em riachos sombrios ou cavidades 
+                            nas margens lamacentas.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O hipopótamo-pigmeu é um herbívoro de hábitos predominantemente noturnos ou crepusculares. A sua alimentação diária é composta essencialmente por rebentos tenros, folhas de arbustos, 
+                        fetos, relva rasteira e frutos caídos no solo da floresta. Enquanto forrageia ao longo dos seus trilhos habituais, utiliza os lábios carnudos e flexíveis para selecionar seletivamente 
+                        a vegetação mais nutritiva. Ao contrário dos grandes hipopótamos, raramente se alimentam de grandes quantidades de capim aquático nas margens abertas.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>O hipopótamo-pigmeu é uma espécie criticamente ameaçada de extinção na natureza, sofrendo com a perda rápida de habitat devido à desflorestação e à caça furtiva.</li>
+                        <li>Embora possuam um aspeto corpulento, conseguem mover-se com surpreendente rapidez e silêncio através da vegetação densa e cerrada da floresta tropical.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos hipopótamos Pigmeus</h3>
+                    <p>No Zoo Jonçela, um simpático par de hipopótamos-pigmeus — o calmo macho Bino e a atenta fêmea Amélia — atrai a curiosidade de todos os visitantes no seu habitat especializado. 
+                        Com 7 anos de idade, o Bino possui uma compleição robusta e atinge cerca de 1,5 metros de comprimento, pesando perto de 240 kg. A Amélia, com 5 anos, apresenta uma silhueta 
+                        ligeiramente mais esguia, medindo 1,4 metros e pesando cerca de 200 kg. Ambos partilham um recinto arborizado que combina zonas terrestres lamacentas com um lago de pouca profundidade, 
+                        onde demonstram o seu comportamento tranquilo e solitário.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Artiodactyla</dd>
+
+                    <dt>Família</dt>
+                    <dd>Hippopotamidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Choeropsis</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Choeropsis liberiensis</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>1,2 a 1,7 metros de comprimento</dd>
+
+                    <dt>Peso</dt>
+                    <dd>180 a 275 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>30 a 35 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 6 a 7 meses</dd>
+                    <dd>Altura: 30 a 40 centímetros</dd>
+                    <dd>Peso: 4,5 a 6,2 quilos</dd>
+                </dl>
+
+                <h3>Já ouviu algum Hipopotamo Pigmeu?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/Som_HipopotamoPigmeu.mp3"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguar</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/Floresta/Jaguar1.jpg" alt="Jaguar">
+            <img class="slide" src="../FotosAnimais/Floresta/Jaguar2.jpg" alt="Jaguar">
+            <img class="slide" src="../FotosAnimais/Floresta/Jaguar3.jpg" alt="Jaguar">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">Jaguar</h1>
+            <h2 class="subtitulo">Panthera onca</h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p>O jaguar (Panthera onca), é o maior felino do continente americano e um dos predadores mais formidáveis e respeitados das florestas tropicais. Distingue-se de imediato pelo seu corpo 
+                        extremamente musculoso, compacto e robusto, pernas relativamente curtas e uma cabeça larga com uma força de mordida excecional. A sua bela pelagem de tom dourado ou acastanhado é 
+                        adornada com rosetas marcantes que contêm pequenas pintas pretas no seu interior, funcionando como uma camuflagem perfeita entre a luz e a sombra da vegetação densa.</p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/Mapa_Jaguar.jpg" alt="Habitat natural do Jaguar">
+                        <p>O jaguar habita preferencialmente florestas tropicais densas, bacias hidrográficas extensas, zonas de pântano (como o Pantanal) e bosques subtropicais da América Central e do Sul. 
+                            Ao contrário de muitos outros grandes felinos que evitam a água, o jaguar é um nadador exímio e adora rios e zonas húmidas, onde passa grande parte do tempo a refrescar-se ou a caçar. 
+                            São animais solitários e territoriais, que estabelecem vastas áreas de circulação ao longo de margens fluviais e florestas fechadas.</p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p>O jaguar é um carnívoro estrito e um predador de topo no topo da cadeia alimentar, com hábitos predominantemente crepusculares e noturnos. A sua dieta é extremamente variada e poderosa, 
+                        incluindo capivaras, pecaris, veados, caimans e até tartarugas, cujas carapaças consegue perfurar facilmente com a sua poderosa mandíbula. Ao contrário de outros felinos que atacam 
+                        preferencialmente o pescoço, o jaguar utiliza frequentemente uma mordida direta no crânio através dos ossos temporais para neutralizar instantaneamente as suas presas.</p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li>O jaguar possui a mordida mais poderosa de todos os grandes felinos em proporção ao seu tamanho, sendo capaz de esmagar carapaças de tartaruga e ossos grossos com facilidade.</li>
+                        <li>É um nadador nato e entusiasta, atravessando frequentemente rios largos e caudalosos em busca de presas ou para patrulhar o seu território.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos Jaguares</h3>
+                    <p>No Zoo Jonçela, um magnífico e imponente par de jaguares — o forte macho Jacinto e a atenta fêmea Yara — atrai a admiração de todos os visitantes na zona tropical do parque. Com 6 anos de idade, 
+                        o Jacinto é um macho de constituição muito robusta que mede cerca de 1,6 metros de corpo (com uma cauda de quase 75 cm) e pesa perto de 95 kg. A Yara, com 5 anos, apresenta uma compleição 
+                        ligeiramente mais leve, medindo 1,4 metros e pesando cerca de 75 kg. Ambos partilham um recinto arborizado com um lago de grande dimensão e estruturas de imersão, onde demonstram toda a 
+                        sua força, agilidade e paixão pela água.</p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd>Carnivora</dd>
+
+                    <dt>Família</dt>
+                    <dd>Felidae</dd>
+
+                    <dt>Género</dt>
+                    <dd>Panthera</dd>
+
+                    <dt>Espécie</dt>
+                    <dd>Panthera onca</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>1,1 a 1,8 metros de comprimento</dd>
+
+                    <dt>Peso</dt>
+                    <dd>56 a 96 quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd>12 a 15 anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação: 3 meses</dd>
+                    <dd>Altura: 20 a 25 centímetros</dd>
+                    <dd>Peso: 700 a 900 gramas</dd>
+                </dl>
+
+                <h3>Já ouviu algum Jaguar?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/Som_Jaguar.mp3"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>
