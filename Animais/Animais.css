@@ -1,0 +1,240 @@
+body {
+    background-color: whitesmoke;
+}
+
+
+/* --------------------- TITULOS --------------------- */
+.titulo {
+    font-family: Georgia, serif;
+    font-size: 300%; 
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3E2C23;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 4% 0 0 4%;
+    
+}
+
+.subtitulo {
+    font-family: Arial, sans-serif;
+    font-size: 150%;
+    font-weight: normal;
+    font-style: italic;
+    color: #8B5A2B;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding-left: 4%;
+    opacity: 0.9;
+}
+
+.titulo-seccao {
+    font-family: Georgia, serif;
+    font-size: 150%;
+    font-weight: bold;
+    color: #3E2C23;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 3% 0 1% 0;
+
+}
+
+.titulo-grelha {
+    font-family: Arial, sans-serif;
+    font-size: 180%;
+    letter-spacing: 0.15em;
+    color: #8B5A2B;
+    margin: 0 4% 4% 4%;
+}
+
+
+/* --------------------- CONTEUDO PAGINA --------------------- */
+.conteudo-animal {
+    display: flex;
+    align-items: flex-start;
+    gap: 3%;
+    padding: 2% 4%;
+}
+
+.principal {
+    flex: 1;
+}
+
+.aba-lateral {
+    width: 25%;
+    position: sticky;
+    top: 20vh;
+    background-color: #F5EFE6;
+    border-left: 0.2em solid #8B5A2B;
+    border-radius: 0.5em;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.aba-lateral h3 {
+    margin-bottom: 4%;
+    color: #3E2C23;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+
+.aba-lateral dt {
+    color: #8B5A2B;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 85%;
+    margin-top: 4%;
+}
+
+.aba-lateral dd {
+    margin: 0;
+    color: #3E2C23;
+    font-size: 85%;
+    font-family: Arial, sans-serif;
+}
+
+.mapas {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+
+.mapa-imagem {
+    max-width: 35%;
+    border-radius: 0.8em;
+    border: 2px solid #8B5A2B;
+}
+
+p {
+    flex: 1;
+    margin: 0 0 2% 0;
+    font-family: Arial, sans-serif;
+    font-size: 110%;
+    line-height: 1.7;
+    color: #3E2C23;
+    text-align: justify;
+    hyphens: auto;
+    max-width: 75ch;
+}
+
+ul {
+    font-family: Arial, sans-serif;
+    font-size: 110%;
+    color: #3E2C23;
+    list-style-type: disc;
+    padding-left: 4%;
+    max-width: 72ch;
+}
+
+li {
+    line-height: 1.7;
+    margin: 0 0 1% 1%;
+}
+
+li::marker {
+    color: #8B5A2B;
+}
+
+/* --------------------- VER OUTROS ANIMAIS --------------------- */
+.mais-animais {
+    padding-top: 4%;
+    text-align: center;
+    width: 100%;
+}
+
+.grelha {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   /* 4 colunas com a mesma largura */
+    gap: 0;
+}
+
+.cartao {
+    position: relative;
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.cartao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;    /* pequeno zoom */
+}
+
+.cartao span {
+    position: absolute;     /* sai do fluxo e fica sobre a imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /* centra no meio exato do cartão */
+    width: 90%;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 140%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.8);   /* sombra para ler bem sobre qualquer foto */
+}
+
+.cartao:hover img {
+    transform: scale(1.1);      /* aumenta a imagem 10% */
+}
+
+
+/* --------------------- SOM --------------------- */
+.botao-som {
+    margin: 2% 0 0 4%;
+    padding: 0.6em 1.4em;
+    background-color: #8B5A2B;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cor ao passar o rato */
+.botao-som:hover {
+    background-color: #3E2C23;        /* castanho escuro */
+}
+
+
+/* --------------------- RODAPE --------------------- */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 4%;
+    padding: 3% 6%;
+    background-color: darkolivegreen;
+}
+
+.logo-rodape {
+    width: 130px;
+}
+
+.rodape-links {
+    display: flex;
+    gap: 3em;
+}
+
+.rodape-links a {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.rodape-links a:hover {
+    color: #bdb9b4;
+}
