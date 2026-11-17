@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>___</title>
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../Animais.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav id="menu-navegacao">
+            <a href="../../Inicio.html">
+                <img class="logo-canto" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+            
+
+            <div class="links-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habitat">Habitat</a>
+                <a href="#dieta">Dieta</a>
+                <a href="#curiosidades">Curiosidades</a>
+
+                <div class="relogio">
+                    <p id="DataHora"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- O Slider -->
+        <div class="carrossel">
+            <img class="slide ativo" src="../FotosAnimais/" alt="___">
+            <img class="slide" src="../FotosAnimais/" alt="">
+            <img class="slide" src="../FotosAnimais/" alt="">
+
+            <!-- Setas de navegação -->
+            <button class="seta seta-esq" onclick="mudarSlide(-1)">❮</button>
+            <button class="seta seta-dir" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <div class="bolinhas-container">
+            <!-- Cada bolinha chama uma função para ir para a foto específica (0, 1 ou 2) -->
+            <span class="bolinha ativo" onclick="irParaSlide(0)"></span>
+            <span class="bolinha" onclick="irParaSlide(1)"></span>
+            <span class="bolinha" onclick="irParaSlide(2)"></span>
+        </div>
+    
+
+
+
+        <section id="sobre">
+            <h1 class="titulo">___</h1>
+            <h2 class="subtitulo"></h2>
+            
+        </section>
+
+        <div class="conteudo-animal">
+            <div class="principal">
+
+                <section>
+                    <p></p>
+                </section>
+
+                <section id="habitat">
+                    <h3 class="titulo-seccao">Habitat Natural</h3>
+                    <div class="mapas">
+                        <img class="mapa-imagem" src="../Mapas/" alt="Habitat natural do ___">
+                        <p></p>
+                    </div>
+                </section>
+
+
+                <section id="dieta">
+                    <h3 class="titulo-seccao">Dieta</h3>
+                    <p></p>
+                </section>
+
+
+                <section id="curiosidades">
+                    <h3 class="titulo-seccao">Curiosidades</h3>
+
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="titulo-seccao">Os nossos ___</h3>
+                    <p>No Zoo Jonçela, </p>
+                </section>
+            </div>
+
+            <aside class="aba-lateral">
+                <h3>Informações</h3>
+                <dl>
+                    <dt>Classe</dt>
+                    <dd>Mammalia</dd>
+
+                    <dt>Ordem</dt>
+                    <dd></dd>
+
+                    <dt>Família</dt>
+                    <dd></dd>
+
+                    <dt>Género</dt>
+                    <dd></dd>
+
+                    <dt>Espécie</dt>
+                    <dd></dd>
+
+                    <dt>Tamanho</dt>
+                    <dd> metros</dd>
+
+                    <dt>Peso</dt>
+                    <dd> quilos</dd>
+
+                    <dt>Vida</dt>
+                    <dd> anos</dd>
+
+                    <dt>Ao nascer</dt>
+                    <dd>Gestação:  meses</dd>
+                    <dd>Altura:  centímetros</dd>
+                    <dd>Peso:  gramas</dd>
+                </dl>
+
+                <h3>Já ouviu algum ___?</h3>
+                    <button id="btnSom" class="botao-som">🔊 Ouvir o som</button>
+                    <audio id="somAnimal" src="../Som/"></audio>
+            </aside>
+            
+        </div>
+
+        <section class="mais-animais" id="mais-animais">
+            <h2 class="titulo-grelha">Descubra mais animais da floresta</h2>
+
+            <div class="grelha">
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+
+                <a class="cartao" href=".html">
+                    <img src="../FotosAnimais/" alt="imagem de ___">
+                    <span>___</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <a href="../../Inicio.html">
+                <img class="logo-rodape" src="../../Logos/logo_veado.png" alt="Logo do Zoo Jonçela">
+            </a>
+
+            <nav class="rodape-links">
+                <a href="../../Bilhetes.html">Bilhetes</a>
+                <a href="../../Contactos.html">Contactos</a>
+            </nav>
+        </footer>
+
+
+    </main>
+    <script src="../../script.js"></script>
+</body>
+</html>
